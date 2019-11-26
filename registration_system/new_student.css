@@ -1,0 +1,108 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bitter', serif;
+}
+/* Working with header */
+header {
+    background: lightblue;
+    border-radius: 30px;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_header {
+    text-align: center;
+}
+
+/* Main section */
+/* Register new student section */
+/* //Student button */
+.student {
+    display: flex;
+    justify-content: center;
+    background: lightsalmon;
+    border-radius: 30px;
+    margin: 1% auto;
+    width: 50%;
+}
+
+form {
+    background: lightsalmon;
+    line-height: 2;
+    margin: 1% auto;
+    text-align: center;
+    width: 50%;
+    padding: 1%;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.student_name, .address, .parent1, .parent2{
+    margin-bottom: 2%;
+}
+
+.submit_button {
+    border-radius: 30px;
+}
+
+.submit_button:hover {
+    background: salmon;
+}
+
+/* Class section */
+.class{
+    display: flex;
+    justify-content: center;
+}
+
+.new_class{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: lightgoldenrodyellow;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.new_class:hover {
+    transform: scale(1.2);
+}
+
+/* After-care button */
+.aftercare {
+    display: flex;
+    justify-content: center;
+}
+
+.aftercare_button {
+    margin-bottom: 1%;
+    background: lightcoral;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.aftercare_button:hover {
+    transform: scale(1.2);
+}
+
+
+/* Payment-button */
+.payment {
+    display: flex;
+    justify-content: center;
+}
+
+.payment_button {
+    margin-bottom: 1%;
+    background: lightpink;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.payment_button:hover {
+    transform: scale(1.2);
+}

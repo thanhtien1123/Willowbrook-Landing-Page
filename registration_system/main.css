@@ -1,0 +1,113 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bitter', serif;
+}
+.container {
+    display: grid;
+    grid-template-rows: 80px auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    ;
+}
+
+/* Working with header */
+header {
+    grid-area: hd;
+    background: lightblue;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.menu_header {
+    text-align: center;
+    
+}
+
+/* Working with main section */
+.menu_items {
+    margin-top: 2%;
+    grid-area: main;
+}
+
+/* //Student button */
+.student {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+
+}
+
+.new_student {
+    background: lightsalmon;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 50%;
+    height: 20%;
+}
+
+.new_student:hover {
+    transform: scale(1.2);
+}
+
+/* Class section */
+.class{
+    display: flex;
+    justify-content: center;
+}
+
+.new_class{
+    display: block;
+    margin-bottom: 1%;
+    background: lightgoldenrodyellow;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 50%;
+    height: 20%;
+}
+ 
+.new_class:hover{
+    transform: scale(1.2);
+}
+/* After-care button */
+.aftercare {
+    display: flex;
+    justify-content: center;
+}
+
+.aftercare_button {
+    margin-bottom: 1%;
+    background: lightcoral;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 50%;
+    height: 20%;
+}
+
+.aftercare_button:hover {
+    transform: scale(1.2);
+}
+/* Payment-button */
+.payment {
+    display: flex;
+    justify-content: center;
+}
+
+.payment_button {
+    margin-bottom: 1%;
+    background: lightpink;
+    border: solid 2px black;
+    border-radius: 20px;
+    width: 50%;
+    height: 20%;
+}
+
+.payment_button:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,111 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bitter', serif;
+}
+/* Working with header */
+header {
+    background: lightblue;
+    border-radius: 30px;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_header {
+    text-align: center;
+}
+/* 
+Main section
+Aftercare section */
+.aftercare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    border-radius: 30px;
+    width: 50%;
+    background: lightcoral;
+}
+
+form {
+    line-height: 2rem;
+    background: lightcoral;
+    line-height: 2;
+    margin: 1% auto;
+    text-align: center;
+    width: 50%;
+    padding: 1%;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.student, .parent1, .address, .parent2 {
+    margin-bottom: 1%;
+
+}
+
+.submit_button {
+    border-radius: 30px;
+}
+
+.submit_button:hover {
+    background: coral;
+}
+
+
+/* Student button */
+.student {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.new_student {
+    background: lightsalmon;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.new_student:hover{
+    transform: scale(1.2);
+}
+
+/* Class section */
+.class{
+    display: flex;
+    justify-content: center;
+}
+
+.new_class{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: lightgoldenrodyellow;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.new_class:hover {
+    transform: scale(1.2);
+}
+
+
+/* Payment-button */
+.payment {
+    display: flex;
+    justify-content: center;
+}
+
+.payment_button {
+    margin-bottom: 1%;
+    background: lightpink;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.payment_button:hover {
+    transform: scale(1.2);
+}

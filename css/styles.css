@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: sandybrown;
+    color: white;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    grid-template-rows: 60px auto auto auto auto auto 200px;
+    grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "home home home home home home home home"
+    "about about about about about about about about"
+    "pro pro pro pro pro pro pro pro"
+    "re re re re re re re re"
+    "co co co co co co co co"
+    "ft ft ft ft ft ft ft ft"
+    ;
+    width: 100vw;
+}
+
+/* This is navbar */
+.navbar {
+    position: fixed;
+    grid-area: nav;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar ul li {
+    margin: 1.2rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: rosybrown;
+}
+
+.highlight {
+    border-bottom:1px solid sandybrown;
+}
+
+/* This is home section */
+section#home {
+    grid-area: home;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    -webkit-text-stroke: 1px black;
+    background: url("https://images.unsplash.com/photo-1510531704581-5b2870972060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3304&q=80") no-repeat center center/cover;
+}
+
+#home .home-section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "top top top top top top top top"
+    "bt bt bt bt bt bt bt bt"
+    ;
+}
+
+#home .home-section .home-header-1 {
+    grid-area: top;
+}
+
+#home .home-section .home-header-2 {
+    grid-area: bt;
+}
+
+/* This is about section */
+section#about {
+    grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    -webkit-text-stroke: 1px black;
+    background: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2304&q=80") no-repeat center center/cover;
+}
+
+
+section#about::after {
+    content: " ";
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+section .about-p {
+    -webkit-text-stroke: white;
+    font-size: x-large;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Programs section */
+section#programs {
+    text-align: center;
+    grid-area: pro;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2014&q=80") no-repeat center center/cover;
+}
+
+.programs-header {
+    padding-top: 2%;
+}
+
+    /* Tab bars */
+.tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tabs #tab-1:hover, .tabs #tab-2:hover {
+    background: rgba(0,0,0,0);
+	color: sandybrown;
+	box-shadow: inset 0 0 0 3px sandybrown;
+}
+
+.tabs #tab-1, .tabs #tab-2 {
+    margin: 1rem 0;
+    -webkit-text-stroke: black 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: x-large;
+    left: 25%;
+    width: 50%;
+}
+
+.tab-border {
+    border-bottom: sandybrown 1px solid;
+}
+
+#tab-1-content, #tab-2-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Hide Content Initially */
+#tab-1-content, #tab-2-content{
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.content-2 {
+    margin-top: 2rem;
+}
+
+.day-school-image {
+    width: 20%;
+    height: 10%;
+}
+.school-image {
+    margin-top: 5%;
+    border: 3px solid #ddd;
+    width: 30%;
+}
+
+/* Register */
+section#register {
+    grid-area: re;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    -webkit-text-stroke: black 1px;
+    background: url("https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80") no-repeat center center/cover;
+}
+
+#register .register-section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "btn btn btn btn btn btn btn btn"
+    ;
+}
+
+section .register-header {
+    grid-area: hd;
+    text-align: center;
+    padding-top: 2%;
+    color: #ebdfd1;
+}
+
+.btn {
+    grid-area: btn;
+    background: sandybrown;
+    padding: 2rem;
+    position: relative;
+    top: 20%;
+    left: 5%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    border-radius: 40px;
+}
+
+/* Contact */
+section#contact {
+    grid-area: co;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url("https://images.unsplash.com/photo-1485322551133-3a4c27a9d925?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80") no-repeat center center/cover;
+}
+
+
+
+.contact-header {
+    z-index: 1;
+}
+form {
+    z-index: 1;
+    font-size: medium;
+    line-height: 2;
+}
+
+/* Footer */
+.footer {
+    grid-area: ft;
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.footer, .footer a {
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    line-height: 1.9;
+}
+
+/* Changing Text Size */
+.text-md {
+    font-size: 1.5rem;
+}
+
+.text-xl {
+    font-size: 3rem;
+}
+
+.text-xxl {
+    font-size: 7rem;
+}
+
+@media(max-width: 960px) {
+ 
+    section .register-header h1 {
+        margin-left: 20%;
+        padding-top: 2%;
+        color: #ebdfd1;
+        font-size: 3rem;
+    }
+
+    .btn {
+        padding: 2rem;
+    }
+
+    .btn a {
+        font-size: 2rem;
+    }
+
+    #about .about-header {
+        font-size: 4rem;
+    }
+
+    #about .about-p {
+        font-size: 1rem;
+    }
+
+    #programs .programs-header {
+        font-size: 2.5rem;
+    }
+    
+    .tab-content-item div {
+        font-size: 1rem;
+    }
+
+    #contact .contact-header {
+        font-size: 1.5rem;
+    }
+}
